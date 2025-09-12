@@ -1,8 +1,10 @@
 /* File: landing_page/src/index.css */
-.bg-info{
+.bag-info{
+   /* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto; */
   padding: 20px;
-  color:white;
-  background:linear-gradient(45deg,black,red,blue,white);
+  /* color:rgb(0, 173, 181); */
+  background-color:rgb(34, 40, 49);
 }
 
 #sec1{
@@ -10,6 +12,7 @@
   color:white;
   background:linear-gradient(45deg,rgb(26, 4, 224),rgb(126, 213, 12));
 }
+
 #h1tag{
   text-align:justify;
   font-size: 30px;
@@ -72,7 +75,7 @@ img{
 }
 
 .landing-page{
-  background:linear-gradient(45deg,black,red,blue,white);
+  background:linear-gradient(45deg,rgb(18, 65, 112),rgb(38, 102, 127),rgb(103, 192, 144),rgb(221, 244, 231));
   height: 100vh;
   
   color: white;
@@ -83,3 +86,6 @@ img{
   height: 100vh;
 }
 
+body{
+  background-color: rgb(238, 238, 238);
+}

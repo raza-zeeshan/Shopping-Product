@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import ErrorMsg from "./ErrorMsg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 //import Shimmer from "./Shimmer";
 
-export default function Product() {
+export default function Products() {
   let [products, setProducts] = useState([]);
   let [isLoading, setIsLoading] = useState(false);
   let [errorMsg, setErrorMsg] = useState("");

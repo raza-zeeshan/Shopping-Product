@@ -1,13 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router";
 
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-dark bg-info navbar-expand-sm">
+      <nav className="navbar navbar-dark bag-info navbar-expand-sm">
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand">
-            <i className="fa fa-snowflake-o me-2"></i>
-            React Routing
+            <i className="fa fa-snowflake-o mx-1"></i>
+            Shopping App
           </NavLink>
 
           <div className="collapse navbar-collapse d-flex justify-content-between">
