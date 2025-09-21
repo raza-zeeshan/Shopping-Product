@@ -18,9 +18,9 @@ export default function Home() {
           rerum, cum aliquam explicabo ab nemo repudiandae omnis deserunt.
           Distinctio.
         </p>
-        {/* <Link to="/products">
+        <Link to="/products">
           <button className="btn btn-warning text-black">SHOP NOW</button>
-        </Link> */}
+        </Link>
       </section>
     </>
   );

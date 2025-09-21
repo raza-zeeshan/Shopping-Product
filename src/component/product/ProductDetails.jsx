@@ -12,14 +12,14 @@ export default function ProductDetails() {
   }, []);
 
   async function getProductInfo() {
-    let res = await fetch(`https://fakestoreapi.in/api/products/${id}`);
+    let res = await fetch(`https://fakestoreapi.com/products/${id}`);
     // let res = await fetch(`https://fakestoreapi.in/api/products`);
     let data = await res.json();
 
     // const product = data.products.find((item) => item.id.toString() === id);
 
-    console.log(data.product);
-    setSingleProduct(data.product);
+    console.log(data);
+    setSingleProduct(data);
     // console.log(product);
     // setSingleProduct(product);
   }
@@ -30,10 +30,10 @@ export default function ProductDetails() {
     <>
       <section className="container-fluid">
         <div className="row">
-          <div className="col-10 m-auto">
+          <div className="col-8 m-auto" key={singleProduct.id}>
             <div className="card my-5 ">
               <div className="card-header text-center bg-black text-warning">
-                <h1>{brand}</h1>
+                <h1>{title}</h1>
               </div>
               <div className="row  ">
                 <div className="col-4 ">
@@ -49,11 +49,11 @@ export default function ProductDetails() {
                   <p className="fw-bold">{`Color: ${color}`}</p>
                 </div>
               </div>
-              <div className="mb-2 d-flex justify-content-evenly">
+              <div className="mb-3 d-flex justify-content-evenly">
                 <Link to="/products">
                   <button className="btn btn-warning">{"Back"}</button>
                 </Link>
-                <Link to="">
+                <Link to="/cart">
                   <button className="btn btn-dark">{"Add to Cart"}</button>
                 </Link>
               </div>

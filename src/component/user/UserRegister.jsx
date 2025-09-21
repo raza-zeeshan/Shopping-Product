@@ -14,29 +14,29 @@ export default function UserRegister() {
                 <form action="">
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="name"
+                    id="name"
                     className="form-control mb-3"
                     placeholder="enter the name"
                   />
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="email"
+                    id="email"
                     className="form-control mb-3"
                     placeholder="enter the email"
                   />
                   <input
                     type="password"
-                    name=""
-                    id=""
+                    name="password"
+                    id="password"
                     className="form-control mb-3"
                     placeholder="enter the password"
                   />
                   <input
                     type="password"
-                    name=""
-                    id=""
+                    name="confirmPassword"
+                    id="confirmPassword"
                     className="form-control mb-3"
                     placeholder="re-enter password"
                   />

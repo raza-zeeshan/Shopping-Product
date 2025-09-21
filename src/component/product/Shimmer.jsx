@@ -4,8 +4,8 @@ export default function Shimmer() {
     <>
       <section className="container-fluid">
         <div className="row">
-          {arr.map(() => (
-            <div className="col-md-3 mb-3">
+          {arr.map((id) => (
+            <div className="col-md-3 mb-3" key={Math.random() * id}>
               <div className="card " style={{ width: "100%", height: "100%" }}>
                 <div className="card-header" style={{ height: "320px" }}>
                   <img src="" alt="" />
@@ -13,7 +13,9 @@ export default function Shimmer() {
                 <div
                   className="card-body text-center"
                   style={{ height: "130px" }}
-                ></div>
+                >
+                  {""}
+                </div>
               </div>
             </div>
           ))}

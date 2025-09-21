@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import ErrorMsg from "./ErrorMsg";
 import { Link } from "react-router";
-//import Shimmer from "./Shimmer";
 
 export default function Products() {
   let [products, setProducts] = useState([]);
@@ -16,12 +15,12 @@ export default function Products() {
   async function getProductInfo() {
     try {
       setIsLoading(true);
-      let res = await fetch("https://fakestoreapi.in/api/products");
+      let res = await fetch("https://fakestoreapi.com/products");
 
       if (!res.ok) throw new Error("Something Went Wrong, Fail to fetch");
       let data = await res.json();
-      //   console.log(data.products);
-      setProducts(data.products);
+      console.log(data);
+      setProducts(data);
       setIsLoading(false);
     } catch (err) {
       setErrorMsg(err.message);
@@ -42,32 +41,31 @@ export default function Products() {
           {!isLoading &&
             !errorMsg &&
             products.map((product) => {
-              let { image, price, brand } = product;
+              let { image, price, title } = product;
 
               return (
                 <div className="col-md-3 mb-3" key={product.id}>
-                  <Link to={`/products/${product.id}`}>
-                    <div className="card">
+                  <div className="card">
+                    <Link to={`/products/${product.id}`}>
                       <div className="card-header">
-                        <img src={image} alt={brand} />
+                        <img src={image} alt={title} />
                       </div>
                       <div className="card-body text-center">
-                        <h2>{brand}</h2>
+                        <h2>{title}</h2>
                         <h3> 💲{price}</h3>
                       </div>
-
-                      <div className="card-footer d-flex justify-content-around">
-                        <Link to="/cart">
-                          <button className="btn btn-primary btn-sm">
-                            Add to Cart
-                          </button>
-                        </Link>
-                        <button className="btn btn-success btn-sm">
-                          Buy Now
+                    </Link>
+                    <div className="card-footer d-flex justify-content-around">
+                      <Link to="/cart">
+                        <button className="btn btn-primary btn-sm">
+                          Add to Cart
                         </button>
-                      </div>
+                      </Link>
+                      <button className="btn btn-success btn-sm">
+                        Buy Now
+                      </button>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               );
             })}

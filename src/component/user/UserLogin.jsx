@@ -14,16 +14,16 @@ export default function UserLogin() {
                 <form action="">
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="name"
+                    id="name"
                     className="form-control mb-3"
                     placeholder="enter the name"
                     required
                   />
                   <input
                     type="password"
-                    name=""
-                    id=""
+                    name="password"
+                    id="password"
                     className="form-control mb-3"
                     placeholder="enter the password"
                   />
