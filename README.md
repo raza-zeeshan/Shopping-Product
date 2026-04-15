@@ -6,8 +6,10 @@ A React-based e-commerce application that allows users to browse products, view 
 
 - **Product Listing:** Browse products fetched from [Fake Store API](https://fakestoreapi.com/products).
 - **Product Details:** View detailed information about each product.
+  
 - **Shopping Cart:** Add products to the cart and view cart contents.
 - **Routing:** Seamless navigation using React Router.
+  
 - **Error Handling & Loading States:** User-friendly feedback during data fetches.
 - **Responsive Design:** Built with Bootstrap for mobile-friendly layouts.
 
