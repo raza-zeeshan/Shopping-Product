@@ -14,7 +14,6 @@ A React-based e-commerce application that allows users to browse products, view 
 - **Responsive Design:** Built with Bootstrap for mobile-friendly layouts.
 
 ## Folder Structure
-
 ```
 shopping-app/
 ├── public/
@@ -64,7 +63,6 @@ shopping-app/
     ```sh
     npm install
     ```
-
 ### Running the App
 
 Start the development server:
