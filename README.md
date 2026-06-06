@@ -53,7 +53,6 @@ shopping-app/
 
 ### Installation
 
-
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/shopping-app.git
