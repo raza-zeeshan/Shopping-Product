@@ -4,7 +4,6 @@ A React-based e-commerce application that allows users to browse products, view 
 
 ## Features
 
-
 - **Product Listing:** Browse products fetched from [Fake Store API](https://fakestoreapi.com/products).
 - **Product Details:** View detailed information about each product.
   
