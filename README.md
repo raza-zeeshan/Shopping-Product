@@ -46,6 +46,7 @@ shopping-app/
 
 ## Getting Started
 
+
 ### Prerequisites
 
 - Node.js (v16+ recommended)
