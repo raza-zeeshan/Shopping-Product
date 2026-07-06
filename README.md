@@ -72,7 +72,6 @@ npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-
 ## Usage
 
 - **Browse Products:** Go to `/products` to see all products.
